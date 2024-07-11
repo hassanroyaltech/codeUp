@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+  font-family: "Noto Sans", sans-serif;
+}
+.container{
+  max-width: 1200px;
+  margin:auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
+  flex-wrap: wrap; /* allow columns to wrap to next line if necessary */
+}
+
+.col-3 {
+  flex-basis: 33.33%; 
+  max-width: 33.33%;  
+  padding: 10px;  
+  box-sizing: border-box;  
+}
+.col-2 {
+  flex: 0 0 348px;
+  max-width: 348px;
+}
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
   flex-direction: column;
+}
+
+.gap-4 {
+  gap: 1rem;  
+}
+.align-items-center{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.header {
+  padding: 0px 48px 0px 48px;
+   
+    border-bottom: 2px solid #EBEBEB;
+}
+.header .container{
+  padding: 0px 48px 0px 48px;
+  height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+
+}
+.icon{
+  color: #929292;
+}
+.btn{
+  cursor: pointer;
+}
+.no-bg{
+background:none;
+}
+.no-br{
+ border: none;
+}
+.header .left-column{
+  width: 657px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+.header .right-column{
+  min-width:269px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  border-left: 2px solid #EBEBEB;
+  padding-left: 48px;
+
+}
+.header .right-column .userMenu{
+  margin-left: 82px;
+}
+nav{
+  display: flex;
+    height: 100%;
+}
+nav .nav-bar{display: flex; list-style: none; margin: 0; padding: 0; align-items: center; gap: 32px;}
+nav .nav-bar .nav-item{
+  display: flex;
+  align-items: center;
+  height: 100%;
+position: relative;
+
+}
+nav .nav-bar .nav-item .nav-link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+nav .nav-bar .nav-item::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: -1px;
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav .nav-bar .nav-item:hover::before {
+  display: block;
+}
+
+h1,h2,h3,h4,p{
+  margin: 0;
+}
+.mb-2{
+  margin-bottom: 8px;
+}
+h4{
+  font-family: Noto Sans;
+font-size: 16px;
+font-weight: 800;
+line-height: 21.79px;
+text-align: left;
+
+}
+/* headings */
+.leadHeading{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.52px;
+  color: #DA6034;
+  padding:0;
+  margin: 0;
+}
+.heading{
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 56.16px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  
+}
+.w-100{
+  width:100%;
+}
+/* rating */
+.ratingContainer{
+  display: flex;
+  align-items: center;
+  font-family: Noto Sans;
+font-size: 16px;
+font-weight: 800;
+line-height: 21.79px;
+text-align: left;
+gap: 15px;
+}
+.section{
+  padding: 46px 0;
+}
+.radio-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+
+}
+
+.radio-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+ 
+gap: 10px;
+border-radius: 40px;
+border: 1px  solid #CBCBCB;
+opacity: 0px;
+position: relative;
+}
+.radio-button::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: #DA6034;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.radio-button.active {
+ 
+  border: 1px  solid #DA6034
+  ;
+}
+.radio-button.active::after{
+ display: block; 
+}
+
+.radio-button:hover {
+  background-color: #e0e0e0;
 }
