@@ -1,21 +1,10 @@
 // src/components/Layout.js
 import React from 'react';
 import Icon from './icon';
-
 import productImage from '../assets/images/productImage.png';
-import Navigation from './navigation';
-import RadioButton from './optionButton';
 import OptionButtons from './optionButton';
-
 const HomePage = (props) => {
-    const data = [
-        { value: 'Option 1', image: 'https://example.com/image1.jpg', text: 'Option 1' },
-        { value: 'Option 2', image: 'https://example.com/image2.jpg' },
-        { value: 'Option 3', text: 'Option 3' },
-    ];
-    const handleSelect = (value) => {
-        console.log(`Selected: ${value}`);
-    };
+
     return (
 
         <>
