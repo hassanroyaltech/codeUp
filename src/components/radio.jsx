@@ -59,14 +59,14 @@ function OptionButtons() {
         ))}
       </div>
 
-      <h4 className='mb-2'>COLOUR: {color}</h4>
+      <h4 className='mb-2Z'>COLOUR: {color}</h4>
       <div className="radio-group">
         {colorOptions.map((option) => (
           <label key={option.color} className="radio-label"
           >
             <button
               type="button"
-              className={`radio-button ${color === option? 'active' : ''}`}
+              className={`radio-button ${color === option.name? 'active' : ''}`}
               onClick={() => handleColorChange({ target: { value: option.name } })}
               style={{ borderRadius:"100px", width:50, paddingLeft:0, paddingRight:0} }
             >
