@@ -21,7 +21,7 @@ const HomePage = (props) => {
         <>
             <div className='container'>
                 <section className='section'>
-                    <div className='row align-items-center'>
+                    <div className='row align-items-center justify-content-between'>
                         <div className='col-2 d-flex flex-column gap-4'>
                             <p className='leadHeading'>In stock</p>
                             <h2 className='heading'>    Refurbished iPhone 14 Pro</h2>

@@ -41,6 +41,9 @@ body{
    
     border-bottom: 2px solid #EBEBEB;
 }
+.justify-content-between{
+  justify-content: space-between;
+}
 .header .container{
   padding: 0px 48px 0px 48px;
   height: 100px;
