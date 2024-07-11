@@ -4,8 +4,8 @@ import Icon from './icon';
 
 import productImage from '../assets/images/productImage.png';
 import Navigation from './navigation';
-import RadioButton from './radio';
-import OptionButtons from './radio';
+import RadioButton from './optionButton';
+import OptionButtons from './optionButton';
 
 const HomePage = (props) => {
     const data = [
