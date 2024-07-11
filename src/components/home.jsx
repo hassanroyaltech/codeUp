@@ -5,7 +5,7 @@ import Icon from './icon';
 import productImage from '../assets/images/productImage.png';
 import Navigation from './navigation';
 import RadioButton from './radio';
-import RadioButtons from './radio';
+import OptionButtons from './radio';
 
 const HomePage = (props) => {
     const data = [
@@ -46,7 +46,7 @@ const HomePage = (props) => {
                         <div className='col-3'>
 
 
-                            <RadioButtons></RadioButtons>
+                            <OptionButtons></OptionButtons>
                         </div>
                     </div>
                 </section>
