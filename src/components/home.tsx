@@ -1,12 +1,12 @@
 // src/components/Layout.js
 import React from 'react';
 import Icon from './icon';
-import productImage from '../assets/images/productImage.png';
 import OptionButtons from './optionButton';
-const HomePage = (props) => {
+import productImage from '../assets/images/productImage.png';
+
+const HomePage = () => {
 
     return (
-
         <>
             <div className='container'>
                 <section className='section'>
